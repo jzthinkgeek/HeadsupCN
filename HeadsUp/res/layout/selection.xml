@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lightblue" >
+    
+    <TextView 
+        android:id="@+id/textviewSelectionTitle_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/select_title"
+        android:textSize="36sp"
+        android:textColor="@drawable/white"/>
+    
+    <Button 
+        android:id="@+id/buttonSelectionBack_id"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/backtomain"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_below="@id/textviewSelectionTitle_id">
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            
+            <Button 
+            	android:id="@+id/buttonMovie_id"
+            	android:layout_width="130dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:text="@string/movie_name"/>
+            
+             <Button 
+            	android:id="@+id/buttonActor_id"
+            	android:layout_below="@id/buttonMovie_id"
+            	android:layout_marginTop="20dp"
+            	android:layout_width="130dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:text="@string/actor_name"/>
+             
+              <Button 
+            	android:id="@+id/buttonBrand_id"
+            	android:layout_below="@id/buttonActor_id"
+            	android:layout_marginTop="20dp"
+            	android:layout_width="130dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:text="@string/brand_name"/>
+              
+              <Button 
+            	android:id="@+id/buttonDaily_id"
+            	android:layout_below="@id/buttonBrand_id"
+            	android:layout_marginTop="20dp"
+            	android:layout_width="130dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:text="@string/daily_name"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button 
+            	android:id="@+id/buttonLocation_id"
+            	android:layout_width="130dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:text="@string/location_name"/>
+            
+            <Button 
+            	android:id="@+id/buttonActress_id"
+            	android:layout_below="@id/buttonLocation_id"
+            	android:layout_marginTop="20dp"
+            	android:layout_width="130dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:text="@string/actress_name"/>
+            
+            <Button 
+            	android:id="@+id/buttonFood_id"
+            	android:layout_below="@id/buttonActress_id"
+            	android:layout_marginTop="20dp"
+            	android:layout_width="130dp"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:text="@string/food_name"/>
+            
+        </RelativeLayout>
+       
+	</LinearLayout>
+        
+</RelativeLayout>
